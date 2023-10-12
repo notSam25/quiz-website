@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create a div for the question number
         const questionNumberDiv = document.createElement("div");
         questionNumberDiv.classList.add("question-number");
-        questionNumberDiv.innerHTML = `<h1>${index + 1} of ${data.length}</h1>`;
+        questionNumberDiv.innerHTML = `<h1>${index + 1} of ${questions.length}</h1>`;
 
         // Create a div for the question text
         const questionTextDiv = document.createElement("div");
