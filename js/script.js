@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       totalQuestions = questions.length;
       questionAnswered = new Array(totalQuestions).fill(false);
 
-      // iterate over all the questions in the JSON file
+      // iterate over all the questions in the JSON file 
       questions.forEach((question, index) => {
         // Create a div for the quiz element
         const quizElement = document.createElement("div");
