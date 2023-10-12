@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("../config.json")
     .then((response) => response.json())
     .then((data) => {
-      const quizQuestionsContainer = document.querySelector(
-        ".quiz-questions-container"
-      );
+      const quizQuestionsContainer = document.querySelector(".quiz-questions-container");
       if (!quizQuestionsContainer) return;
 
-      // set variables for future use
-      totalQuestions = Object.keys(data).length;
+      // Extract the questions array from the JSON data
+      const questions = data.questions;
+
+      // Set variables for future use
+      totalQuestions = questions.length;
       questionAnswered = new Array(totalQuestions).fill(false);
 
       // iterate over all the questions in the JSON file
