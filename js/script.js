@@ -7,7 +7,7 @@ let questionAnswered = new Array(totalQuestions).fill(false);
 // Add a event listener to setup quiz quesitons
 document.addEventListener("DOMContentLoaded", function () {
   // Fetch the JSON data
-  fetch("https://raw.githubusercontent.com/notSam25/quiz-website/main/config.json")
+  fetch("../config.json")
     .then((response) => response.json())
     .then((data) => {
       const quizQuestionsContainer = document.querySelector(".quiz-questions-container");
